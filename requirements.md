@@ -8,3 +8,8 @@ initially i had no idea on what to build, just that i'll be using Skiper. but af
 4. creative components
 5. japense sliding text somewhere on the site
 6. white bg as it blends well with stationary theme
+
+Credits:
+
+1. [Solane Dasha](https://github.com/apollos-advocate)
+2. [Selina Tung](https://github.com/Ayamamoru)
