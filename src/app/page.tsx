@@ -4,6 +4,8 @@ import * as React from "react";
 import Hero from "@/components/Hero";
 import Products from "@/components/Products";
 import Japanese from "@/components/Japanese";
+import Marquee from "@/components/Marquee";
+import Share from "@/components/Share";
 
 const Page = () => {
   return (
@@ -18,6 +20,11 @@ const Page = () => {
       <div className="w-full pt-10">
         <Japanese />
       </div>
+
+      <Marquee />
+
+      {/* TODO: Make Bottom Center */}
+      <Share />
     </div>
   );
 };
