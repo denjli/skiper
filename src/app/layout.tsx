@@ -18,8 +18,8 @@ const teachers = Teachers({
 });
 
 export const metadata: Metadata = {
-  title: "Bungo — Quality Japenese Stationary", // TODO: Change title at end
-  description: "Back to school in style.", // TODO: Change description
+  title: "Bungo — Quality Japenese Stationary",
+  description: "Back to school in style.",
 };
 
 export default function RootLayout({
