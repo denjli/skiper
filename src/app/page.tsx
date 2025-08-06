@@ -3,7 +3,7 @@ import * as React from "react";
 const Page = () => {
   return (
     <div>
-      <p>Hello everyone!</p>
+      <p className="font-extralight text-red-500">Hello everyone!</p>
     </div>
   );
 };
