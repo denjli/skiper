@@ -1,0 +1,10 @@
+# Requirements
+
+initially i had no idea on what to build, just that i'll be using Skiper. but after collecting some feedback here are the points I received.
+
+1. must be a japense stationary product or brand
+2. use handwriting font from google
+3. divide the site into multiple sections
+4. creative components
+5. japense sliding text somewhere on the site
+6. white bg as it blends well with stationary theme
