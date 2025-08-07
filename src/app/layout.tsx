@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Teachers } from "next/font/google";
+import { Geist, Geist_Mono, Pangolin } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,10 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const teachers = Teachers({
-  variable: "--font-teachers",
-  subsets: ["latin"],
-});
+const pangolin = Pangolin({ weight: "400", variable: "--font-pangolin" });
 
 export const metadata: Metadata = {
   title: "Bungo — Quality Japenese Stationary",
@@ -30,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased ${teachers.variable}`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased ${pangolin} font-pangolin`}
       >
         {children}
       </body>
