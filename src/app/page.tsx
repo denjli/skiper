@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import Products from "@/components/Products";
 import Japanese from "@/components/Japanese";
 import Marquee from "@/components/Marquee";
+import Craft from "@/components/Craft";
 import Share from "@/components/Share";
 
 const Page = () => {
@@ -21,6 +22,7 @@ const Page = () => {
       </div>
 
       <Marquee />
+      <Craft />
 
       {/* TODO: Make Bottom Center */}
       <Share />
