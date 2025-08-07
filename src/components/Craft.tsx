@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import BlurVignette from "@/components/skiper/BlurVignette";
+import BlurVignette from "@/components/ui/blur-vignette";
 
 function BlurVignetteDemo() {
   return (

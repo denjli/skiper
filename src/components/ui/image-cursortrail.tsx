@@ -1,17 +1,17 @@
-"use client"
+"use client";
 
-import { createRef, useRef } from "react"
+import { createRef, ReactNode, useRef } from "react";
 
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
 
 interface ImageMouseTrailProps {
-  items: ImageItem[]
-  children?: ReactNode
-  className?: string
-  imgClass?: string
-  distance?: number
-  maxNumberOfImages?: number
-  fadeAnimation?: boolean
+  items: ImageItem[];
+  children?: ReactNode;
+  className?: string;
+  imgClass?: string;
+  distance?: number;
+  maxNumberOfImages?: number;
+  fadeAnimation?: boolean;
 }
 export default function ImageCursorTrail({
   items,
@@ -22,54 +22,54 @@ export default function ImageCursorTrail({
   distance = 20,
   fadeAnimation = false,
 }: ImageMouseTrailProps) {
-  const containerRef = useRef(null)
-  const refs = useRef(items.map(() => createRef<HTMLImageElement>()))
-  const currentZIndexRef = useRef(1)
+  const containerRef = useRef(null);
+  const refs = useRef(items.map(() => createRef<HTMLImageElement>()));
+  const currentZIndexRef = useRef(1);
 
-  let globalIndex = 0
-  let last = { x: 0, y: 0 }
+  let globalIndex = 0;
+  let last = { x: 0, y: 0 };
 
   const activate = (image, x, y) => {
-    const containerRect = containerRef.current?.getBoundingClientRect()
-    const relativeX = x - containerRect.left
-    const relativeY = y - containerRect.top
-    image.style.left = `${relativeX}px`
-    image.style.top = `${relativeY}px`
-    console.log(refs.current[refs.current?.length - 1])
+    const containerRect = containerRef.current?.getBoundingClientRect();
+    const relativeX = x - containerRect.left;
+    const relativeY = y - containerRect.top;
+    image.style.left = `${relativeX}px`;
+    image.style.top = `${relativeY}px`;
+    console.log(refs.current[refs.current?.length - 1]);
 
     if (currentZIndexRef.current > 40) {
-      currentZIndexRef.current = 1
+      currentZIndexRef.current = 1;
     }
-    image.style.zIndex = String(currentZIndexRef.current)
-    currentZIndexRef.current++
+    image.style.zIndex = String(currentZIndexRef.current);
+    currentZIndexRef.current++;
 
-    image.dataset.status = "active"
+    image.dataset.status = "active";
     if (fadeAnimation) {
       setTimeout(() => {
-        image.dataset.status = "inactive"
-      }, 1500)
+        image.dataset.status = "inactive";
+      }, 1500);
     }
-    last = { x, y }
-  }
+    last = { x, y };
+  };
 
   const distanceFromLast = (x, y) => {
-    return Math.hypot(x - last.x, y - last.y)
-  }
+    return Math.hypot(x - last.x, y - last.y);
+  };
   const deactivate = (image) => {
-    image.dataset.status = "inactive"
-  }
+    image.dataset.status = "inactive";
+  };
 
   const handleOnMove = (e) => {
     if (distanceFromLast(e.clientX, e.clientY) > window.innerWidth / distance) {
-      const lead = refs.current[globalIndex % refs.current.length].current
+      const lead = refs.current[globalIndex % refs.current.length].current;
       const tail =
         refs.current[(globalIndex - maxNumberOfImages) % refs.current.length]
-          ?.current
-      if (lead) activate(lead, e.clientX, e.clientY)
-      if (tail) deactivate(tail)
-      globalIndex++
+          ?.current;
+      if (lead) activate(lead, e.clientX, e.clientY);
+      if (tail) deactivate(tail);
+      globalIndex++;
     }
-  }
+  };
 
   return (
     <section
@@ -100,5 +100,5 @@ export default function ImageCursorTrail({
       ))}
       {children}
     </section>
-  )
+  );
 }
