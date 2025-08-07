@@ -13,8 +13,7 @@ const Page = () => {
       <Hero />
 
       <div className="pt-40">
-        {/* TODO: Fix Products not working */}
-        {/* <Products /> */}
+        <Products />
       </div>
 
       <div className="w-full pt-10">
