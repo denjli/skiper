@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, {JSX} from "react";
 import Image from "next/image";
 import { Facebook, Link, Link2, Linkedin, Twitter } from "lucide-react";
 

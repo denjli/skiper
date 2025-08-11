@@ -1,13 +1,23 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   images: {
     remotePatterns: [
-      new URL("https://skiper-ui.com/**"),
-      new URL("https://cdn.pixabay.com/"),
-      new URL("https://assets.lummi.ai/"),
-      new URL("https://cdn.pixabay.com/"),
+      {
+        protocol: "https",
+        hostname: "skiper-ui.com",
+        pathname: "**",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.pixabay.com",
+        pathname: "**",
+      },
+      {
+        protocol: "https",
+        hostname: "assets.lummi.ai",
+        pathname: "**",
+      },
     ],
   },
 };

@@ -13,15 +13,18 @@ const Page = () => {
     <div className="min-h-screen w-full">
       <Hero />
 
-      <div className="pt-40">{/* <Products /> */}</div>
-
       <div className="w-full pt-10">
         <Japanese />
       </div>
 
-      <Marquee />
-      {/* <Craft /> */}
+      <div className="pt-40">
+        <Products />
+      </div>
 
+      <Craft />
+
+      <Marquee />
+      
       {/* TODO: Make Bottom Center */}
       <Share />
     </div>
