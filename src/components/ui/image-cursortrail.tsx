@@ -1,6 +1,6 @@
 "use client";
 
-import { createRef, ReactNode, useRef } from "react";
+import { createRef, useRef } from "react";
 
 import { cn } from "@/lib/utils";
 
