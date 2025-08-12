@@ -21,7 +21,7 @@ function BlurVignetteDemo() {
           className="size-full  object-cover transition-all "
         >
           <source
-            src="https://cdn.pixabay.com/video/2023/10/19/185726-876210695_large.mp4"
+            src="https://videos.pexels.com/video-files/4360158/4360158-uhd_2560_1440_24fps.mp4"
             type="video/mp4"
           />
         </video>
@@ -40,7 +40,7 @@ function BlurVignetteDemo() {
             width={200}
             height={200}
             className="size-full rounded-[2.5rem] object-cover"
-            src="https://assets.lummi.ai/assets/QmWk5SDFexL89Cky4JrmnALBKyJ82Ny1cqckSGaFu72nRn?auto=format&w=1500"
+            src="https://i.pinimg.com/1200x/42/e7/00/42e700bcff37675688d5d7f179ef9555.jpg"
             alt=""
             priority
           />
@@ -58,7 +58,7 @@ function BlurVignetteDemo() {
             priority
             height={200}
             className="size-full rounded-[2.5rem] object-cover"
-            src="https://assets.lummi.ai/assets/QmNfVLFxAkjRQRHunvFEYgQmJKNtLg64qtfZu1WuZ77p2e?auto=format&w=640"
+            src="https://i.pinimg.com/1200x/11/c3/8e/11c38ef7af113bd3449920079186150d.jpg"
             alt=""
           />
         </BlurVignette>

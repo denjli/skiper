@@ -23,6 +23,16 @@ const nextConfig: NextConfig = {
         hostname: "assets.lummi.ai",
         pathname: "**",
       },
+      {
+        protocol: "https",
+        hostname: "i.pinimg.com",
+        pathname: "**",
+      },
+      {
+        protocol: "https",
+        hostname: "videos.pexels.com",
+        pathname: "**",
+      },
     ],
   },
 };

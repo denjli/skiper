@@ -3,16 +3,13 @@ import ImageCursorTrail from "@/components/ui/image-cursortrail";
 const Hero = () => {
   // TODO: Add stationary images from pinterest
   const images = [
-    "https://images.pexels.com/photos/30082445/pexels-photo-30082445.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    "https://images.unsplash.com/photo-1692606743169-e1ae2f0a960f?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1709949908058-a08659bfa922?q=80&w=1200&auto=format",
-    "https://images.unsplash.com/photo-1548192746-dd526f154ed9?q=80&w=1200&auto=format",
-    "https://images.unsplash.com/photo-1644141655284-2961181d5a02?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.pexels.com/photos/30082445/pexels-photo-30082445.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    "https://assets.lummi.ai/assets/QmNfwUDpehZyLWzE8to7QzgbJ164S6fQy8JyUWemHtmShj?auto=format&w=1500",
-    "https://images.unsplash.com/photo-1706049379414-437ec3a54e93?q=80&w=1200&auto=format",
-    "https://assets.lummi.ai/assets/Qmb2P6tF2qUaFXnXpnnp2sk9HdVHNYXUv6MtoiSq7jjVhQ?auto=format&w=1500",
-    "https://images.unsplash.com/photo-1508873881324-c92a3fc536ba?q=80&w=1200&auto=format",
+    "https://i.pinimg.com/736x/51/15/01/5115019e722e17a99d2459a089b152a6.jpg",
+    "https://i.pinimg.com/736x/96/17/f0/9617f001b87e3570d58fa227c2e8d89d.jpg",
+    "https://i.pinimg.com/736x/c6/d1/50/c6d1507986614389e9a9b7420e273852.jpg",
+    "https://i.pinimg.com/1200x/7b/7a/13/7b7a13e7b9f43e7caed9f4acd8b25d79.jpg",
+    "https://i.pinimg.com/1200x/72/18/2e/72182e10bc3124175abea589ee043133.jpg",
+    "https://i.pinimg.com/736x/b7/73/27/b77327bb3e150b2d21e5a3a4acf2dbcb.jpg",
+    "https://i.pinimg.com/736x/7a/bd/8e/7abd8ecc6e188e7e4947509f9c1e20be.jpg",
   ];
 
   return (
