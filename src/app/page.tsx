@@ -17,11 +17,13 @@ const Page = () => {
         <Japanese />
       </div>
 
-      <div className="pt-40">
+      <div className="py-20 flex justify-center">
         <Products />
       </div>
 
-      <Craft />
+      <div className="py-20 flex justify-center">
+        <Craft />
+      </div>
 
       <Marquee />
 
