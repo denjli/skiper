@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 
-// TODO: Pangolin font is still not applied fix this
-import { Geist, Geist_Mono, Pangolin, Noto_Sans_JP } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Noto_Sans_JP,
+  Indie_Flower,
+} from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -14,7 +18,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const pangolin = Pangolin({ weight: "400", variable: "--font-pangolin" });
+const indieFlower = Indie_Flower({ weight: "400", variable: "--font-indie" });
 
 const notoSansJP = Noto_Sans_JP({
   variable: "--font-noto-jp",
@@ -34,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased ${pangolin} ${notoSansJP.variable}`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased ${indieFlower.variable} ${notoSansJP.variable}`}
       >
         {children}
       </body>

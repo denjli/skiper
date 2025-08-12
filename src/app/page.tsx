@@ -23,7 +23,7 @@ const Page = () => {
         <Japanese />
       </div>
 
-      <div className="py-20 flex justify-center">
+      <div className="py-20 flex justify-center font-indie">
         <Products />
       </div>
 

@@ -22,7 +22,7 @@ const Hero = () => {
       distance={25}
       imgClass="sm:w-40 w-28 sm:h-48 h-36"
     >
-      <h1 className="max-w-2xl text-center text-5xl font-semibold tracking-tight">
+      <h1 className="max-w-2xl text-center text-5xl font-semibold tracking-tight font-indie">
         Back to School in Style
       </h1>
     </ImageCursorTrail>
