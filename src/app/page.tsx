@@ -15,7 +15,7 @@ import Share from "@/components/Share";
 const Page = () => {
   return (
     <div className="min-h-screen w-full">
-      <FluidCursor size={20} opacity={0.5} />
+      <FluidCursor size={25} opacity={0.5} />
 
       <Hero />
 
