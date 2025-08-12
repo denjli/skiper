@@ -15,7 +15,6 @@ const Hero = () => {
     "https://images.unsplash.com/photo-1508873881324-c92a3fc536ba?q=80&w=1200&auto=format",
   ];
 
-  /* TODO: Change the settings later on */
   return (
     <ImageCursorTrail
       items={images}

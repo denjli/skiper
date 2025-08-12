@@ -1,8 +1,8 @@
 import { CardCarousel } from "@/components/ui/card-carousel";
-// TODO: Change to stationary images at the end
-import image1 from "@/assets/1.png";
-import image2 from "@/assets/2.png";
-import image3 from "@/assets/3.png";
+import image1 from "@/assets/1.jpg";
+import image2 from "@/assets/2.jpg";
+import image3 from "@/assets/3.jpg";
+import image4 from "@/assets/4.jpg";
 
 const Products = () => {
   const images = [
@@ -17,6 +17,10 @@ const Products = () => {
     {
       src: image3,
       alt: "Image 3",
+    },
+    {
+      src: image4,
+      alt: "Image 4",
     },
   ];
 
