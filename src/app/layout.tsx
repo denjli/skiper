@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+
 // TODO: Pangolin font is still not applied fix this
 import { Geist, Geist_Mono, Pangolin, Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
