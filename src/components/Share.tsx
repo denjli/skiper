@@ -1,6 +1,6 @@
 "use client";
 
-import React, {JSX} from "react";
+import React, { JSX } from "react";
 import Image from "next/image";
 import { Facebook, Link, Link2, Linkedin, Twitter } from "lucide-react";
 
@@ -34,8 +34,8 @@ export default function ShareButtonDemo(): JSX.Element {
   ];
 
   return (
-    <div>
-      <ShareButton links={shareLinks} className=" text-lg font-medium  ">
+    <div className="left-[50%] b-10 flex justify-center items-center pb-10  ">
+      <ShareButton links={shareLinks} className=" text-lg font-medium">
         <Link size={15} />
         Share
       </ShareButton>

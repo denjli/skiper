@@ -24,8 +24,7 @@ const Page = () => {
       <Craft />
 
       <Marquee />
-      
-      {/* TODO: Make Bottom Center */}
+
       <Share />
     </div>
   );
