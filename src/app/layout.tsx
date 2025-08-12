@@ -18,7 +18,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const indieFlower = Indie_Flower({ weight: "400", variable: "--font-indie" });
+const indieFlower = Indie_Flower({
+  weight: "400",
+  variable: "--font-indie",
+  subsets: ["latin"],
+});
 
 const notoSansJP = Noto_Sans_JP({
   variable: "--font-noto-jp",
